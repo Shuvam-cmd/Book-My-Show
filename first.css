@@ -1,0 +1,311 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    background-color: rgb(218, 99, 99);
+    padding:2rem;
+}
+
+.left{
+    color:white ;
+    font-style:oblique;
+
+}   
+
+
+.right > button{
+    font-size:1.2rem;
+    margin:5px ;
+    font-style:oblique;
+    cursor:pointer;
+    background-color:  rgb(218, 99, 99);
+    border:none;
+    font-weight:bold;
+    padding-top: .2rem;
+    /* border-bottom:red ; */
+}
+
+.right > button:hover{
+    color: red ;
+    /* border-bottom:red ;
+    border:2px solid red; */
+}
+
+.search{
+    padding:2rem;
+    text-align:center ;
+    background-color: rgb(212, 201, 201);
+    /* using flex and justify content also use... */
+}
+
+.searching{
+    
+    font-style:oblique ;
+    font-size: 1rem;
+    width:400px;
+    height:2rem;
+    border-radius: 5px;
+    padding:3px;
+}
+
+.search > button{
+    font-style:oblique ;
+    font-size: 1.5rem ;
+    margin-left:8px;
+    border-radius: 5px;
+    height:2.3rem;
+    padding:3px;
+    background-color : rgb(214, 69, 65);
+    
+}
+
+.hero{
+    display:flex;
+    flex-direction: column;
+    /* text-align: center ; */
+    align-items:center;
+    background-image: url(https://img.freepik.com/premium-photo/grainy-gradient-background-red-white-blue-colors-with-soft-faded-watercolor-border-texture_927344-24167.jpg);
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+.hero > button{
+    margin-top:1rem;
+    cursor:pointer;
+    font-size:1.5rem;
+    background-color:  rgb(214, 69, 65) ;
+    border-radius:5px ;
+}
+
+.hero > h2{
+    color:white ;
+    font-size:2rem;
+
+}
+
+.pop > h2{
+    text-align:center ;
+    font-size:2rem;
+    padding-top:1rem;
+}
+
+.images{
+    height:350px;
+    width:auto;
+}
+
+.movie{
+    display:flex;
+    /* justify-content: center ;
+    align-items:center; */
+    /* overflow-x:auto; */
+    overflow-x:auto;
+    margin-left:10rem;
+    margin-right:10rem;
+   
+}
+.card{
+    border:0.3rem solid grey ; 
+    background-color: grey ;
+    text-align:center;
+    margin: 1rem;
+    border-radius:10px;
+    cursor:pointer ;
+    color:black;
+    
+   
+   
+}
+
+.card > h3{
+    font-size:1.5rem;
+}
+
+.bot{
+    /* padding:2rem; */
+    margin-top:1.5rem ;
+    text-align:center ;
+}
+
+.bot > img{
+    max-width:80% ; 
+    margin-top:2rem;
+}
+
+@media (max-width: 650px )
+{
+    .logo{
+        /* if flex one time define anywhere then not need to write sec time ...  */
+        /* display:flex ; */
+        flex-direction: column ;
+        align-items :center ;
+    }
+    .right{
+        /* here right not defined by flex in prev so here must be define ...  */
+        display:flex;
+        flex-direction: column ;
+        padding:2rem ;
+    }
+
+    .search{
+        display:flex;
+        flex-direction: column;
+        align-items:center ;
+
+    }
+    .search > button {
+        margin-top:2rem ;
+    }
+
+    .movie{
+        display:flex;
+        flex-direction: column ;
+        /* gap:0.5rem; */
+
+    }
+    /* .card{
+        margin:1rem ;
+    } */
+}
+
+button :hover{
+    border-bottom: 2px solid blue ;
+}
+
+.all_card{
+    display:flex;
+    flex-direction : row ;
+    overflow-x: auto;
+    padding:1rem;
+}
+
+.img{
+    border-radius: 1rem;
+    cursor:pointer ;
+}
+
+.best_off{
+    display:flex;
+    flex-direction: row;
+    overflow-x:auto;
+    margin-top:2rem;
+    margin-left:10rem;
+    margin-right:10rem;
+    padding-bottom:1rem;
+  
+}
+
+.The_best > h2 {
+    margin-top:5rem;
+    text-align:center ;
+    font-size:2rem;
+}
+
+.curd{
+    margin:1rem ;
+}
+
+.cird{
+    margin:0.5rem;
+}
+.imo{
+    cursor:pointer ;
+}
+
+.total_pre{
+    margin-top:2rem;
+    background-color: rgb(23, 23, 51);
+    height:30rem ;
+    padding-bottom: 2rem;
+}
+
+.all_pre{
+    display:flex;
+    padding-bottom: 1rem;
+    margin-left:10rem;
+    margin-right:10rem;
+    
+    
+}
+
+.pre_cards{
+    margin:10px;
+    /* position: absolute; */
+}
+
+.total_pre{
+    position: relative;
+}
+.pre > h2 {
+    /* margin-top:5rem; */
+    /* padding-top:5rem; */
+    position:absolute;
+    color:white;
+    /* text-align: center; */
+    margin-top:4.2rem;
+    margin-left:45rem;
+    font-size:3rem;
+}
+
+
+.ima{
+    height:300px;
+    weight:auto;
+    margin-top:8.5rem;
+    padding-bottom:5rem;
+    border-radius:10px;
+    cursor:pointer ;
+}
+.your > h2 {
+    text-align:center ;
+    margin-top:2rem;
+    font-size: 2rem;
+}
+
+.full_music_container{
+    display:flex;
+    margin-left:10rem;
+    margin-right:10rem;
+    overflow-x: auto;
+    padding-bottom: 1.5rem;
+    /* position: relative; */
+    
+}
+
+.music_img{
+    height:400px;
+    border-radius:10px;
+}
+
+.music_card{
+    margin:1rem;
+    cursor:pointer;
+   
+}
+
+.music_card > p{
+    font-size:1.5rem;
+    /* font-weight: 95px; */
+    /* font-; */
+} 
+
+.music_card > h3{
+    color:grey ;
+    /* position: absolute; */
+    margin-top:15px;
+}
+
+.all_foote{
+    background-color:rgb(108, 105, 105);
+    margin-top:3rem;
+}
+.foote{
+    padding-top:3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
